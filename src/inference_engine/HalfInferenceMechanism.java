@@ -18,7 +18,7 @@ public class HalfInferenceMechanism extends InferenceEngine{
     @Override
     public List<Integer> get_next_question(int number, Set<Integer> conclusions) {
         /////JE NUTN0 VRACET V9CE OT8ZEK NEJLEPE NEJBLIZSI V KAZDYM RADKU ABY SE M2L NA CO PT8T A VYHODNOCOVAT
-        999
+        //999
         List<Integer> set_of_questions = new LinkedList<>();
         int min = Integer.MAX_VALUE;
         for (Integer conclusion : conclusions) {
