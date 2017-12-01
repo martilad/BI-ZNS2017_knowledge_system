@@ -20,6 +20,7 @@ import com.vaadin.ui.Alignment;
 import com.vaadin.ui.VerticalLayout;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -34,19 +35,15 @@ public class CreateBarChart {
         ColumnChartPlotOptions columnPlotOptions = new ColumnChartPlotOptions();
         columnConfiguration.setPlotOptions(columnPlotOptions);
 
-        List<HighChartsData> bananaColumnValues = new ArrayList<>();
-        bananaColumnValues.add(new DoubleData(0.3));
-
-        ColumnChartSeries bananaColumn = new ColumnChartSeries("Bananas", bananaColumnValues);
+        for (Map.Entry<String, Double> entry : to_chart.getConlusion_and_meter_of_is().entrySet()) {
+            List<HighChartsData> bananaColumnValues = new ArrayList<>();
+            
+            bananaColumnValues.add(new DoubleData(entry.getValue()));
+            ColumnChartSeries bananaColumn = new ColumnChartSeries(entry.getKey(), bananaColumnValues);
+            columnConfiguration.getSeriesList().add(bananaColumn);
+           
+        }
         
-        List<HighChartsData> nevim = new ArrayList<>();
-        nevim.add(new DoubleData(0.));
-        nevim.add(new DoubleData(0.4));
-
-        ColumnChartSeries nevim1 = new ColumnChartSeries("nevim", nevim);
-        columnConfiguration.getSeriesList().add(nevim1);
-        columnConfiguration.getSeriesList().add(bananaColumn);
-
         HighChart columnChart = null;
         try {
             columnChart = HighChartFactory.renderChart(columnConfiguration);
