@@ -9,6 +9,7 @@ import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorExcepti
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.knowledge_base.DataSave;
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Constants;
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.inference_engine.InferenceEngine;
+import javafx.util.Pair;
 
 /**
  *
@@ -18,8 +19,11 @@ public class Asking {
     ConclusionFuzzy possibly_con;
     InferenceEngine inference_engine;
     Boolean start = true;
+    ExplainModule explain;
     
     public Asking() throws ErrorException {
+        explain = new ExplainModule();
+        explain.load_explaination(Constants.explaine_file);
         DataSave data = new DataSave();
         data.load_data(Constants.data_file);
         possibly_con = new ConclusionFuzzy(data.getConclusion());
@@ -44,6 +48,7 @@ public class Asking {
     }
     
     public void anwer_question(String Question, double answer){
+        explain.new_answer(Question, answer);
         possibly_con = inference_engine.answered(Question, answer, possibly_con);
     }
     
@@ -54,12 +59,13 @@ public class Asking {
         return false;
     }
     
-    public String return_final_conclusion(){
+    public Pair<String,String> return_final_conclusion(){
         String last = possibly_con.get_last();
         if (last == null){
-            return "Neodpovídá žádné řešení.";
+            last = "Neodpovídá žádné řešení.";
+            return new Pair(last, explain.list_of_questions());
         }
-        return last;
+        return new Pair(last, explain.get_eplanation());
     }
     
     

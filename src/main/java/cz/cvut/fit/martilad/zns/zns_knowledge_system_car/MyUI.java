@@ -7,6 +7,7 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
+import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
@@ -27,7 +28,7 @@ import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorExcepti
  */
 @Theme("mytheme")
 public class MyUI extends UI {
-private HighChart chart = null;
+    private HighChart chart = null;
     private Asking asking_module;
     private Label what = new Label("Znalostní systém pro diagnostiku poruchy na vozidle.");
     private Label question = new Label("Tady by měla být otázečka?");
@@ -41,6 +42,7 @@ private HighChart chart = null;
     private Button next = new Button("Další");
     private Button repeat = new Button("Znovu");
     private String actual_question = "";
+    private Label explain = new Label("",ContentMode.PREFORMATTED);
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         try {
@@ -48,13 +50,7 @@ private HighChart chart = null;
         } catch (ErrorException ex) {
             System.out.println(ex.getProblem());
         }
-     
-        
-        
         final VerticalLayout layout = new VerticalLayout();
-        
-        
-     
         layout.addComponent(what); 
         layout.setComponentAlignment(what, Alignment.MIDDLE_CENTER);
         what.addStyleName(ValoTheme.LABEL_H1);
@@ -111,8 +107,10 @@ private HighChart chart = null;
                 layout.removeComponent(chart);
                 }
                 chart = CreateBarChart.put_chart_to_layout(layout, asking_module.get_posibly_conclusion());
-                
-                question.setValue(asking_module.return_final_conclusion());
+                   
+                question.setValue(asking_module.return_final_conclusion().getKey());
+                explain.setValue(asking_module.return_final_conclusion().getValue());
+                layout.replaceComponent(chart, explain);
                 layout.removeComponent(answer);
                 layout.removeComponent(answer_layout);
                 layout.removeComponent(answer_want);
@@ -130,7 +128,7 @@ private HighChart chart = null;
    
         repeat.addClickListener(e -> {
            layout.removeAllComponents();
-           layout.addComponent(what); 
+           layout.addComponent(what);
             layout.setComponentAlignment(what, Alignment.MIDDLE_CENTER);
             what.addStyleName(ValoTheme.LABEL_H1);
             what.addStyleName(ValoTheme.LABEL_COLORED);

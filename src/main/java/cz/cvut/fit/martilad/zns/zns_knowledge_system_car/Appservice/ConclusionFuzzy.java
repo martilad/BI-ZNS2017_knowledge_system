@@ -29,7 +29,7 @@ public class ConclusionFuzzy {
     }
     
     public Double euclidean_metric (Map<String, Double> possible){
-        Double sum = 0.0;         
+        Double sum = 0.0;     
         for (Map.Entry<String, Double> entry : conlusion_and_meter_of_is.entrySet()) {
             String key = entry.getKey();
             Double value = entry.getValue() - possible.get(entry.getKey());
@@ -51,28 +51,31 @@ public class ConclusionFuzzy {
     public void answer_new (Map<String, Double> possible,Double answer){
         
         Map<String, Double> new_con = new HashMap<>(conlusion_and_meter_of_is);
-        for (Map.Entry<String, Double> entry : new_con.entrySet()) {
-            Double value = possible.get(entry.getKey());
-            Double to_avg = answer;
-            Double avg = 0.0;
-            if (answer >= 0.5 && value >= 0.5){
-                avg = (value+to_avg)/2;
-            }else if (answer <= 0.5 && value >= 0.5){
-                value = 1-value;
-                avg = (value+to_avg)/2;
-            }else if (answer >= 0.5 && value <= 0.5){
-                to_avg = 1-to_avg;
-                avg = (value+to_avg)/2;
-            }else if (answer <= 0.5 && value <= 0.5){
-                value = 1-value;
-                to_avg = 1-to_avg;
-                avg = (value+to_avg)/2;
-            }
-            avg = round(avg, 2);
-            if (entry.getValue() > avg){
-                conlusion_and_meter_of_is.put(entry.getKey(),avg); 
+        if (!(answer > 0.4 && answer < 0.6)){
+            for (Map.Entry<String, Double> entry : new_con.entrySet()) {
+                Double value = possible.get(entry.getKey());
+                Double to_avg = answer;
+                Double avg = 0.0;
+                if (answer >= 0.5 && value >= 0.5){
+                    avg = (value+to_avg)/2;
+                }else if (answer <= 0.5 && value >= 0.5){
+                    value = 1-value;
+                    avg = (value+to_avg)/2;
+                }else if (answer >= 0.5 && value <= 0.5){
+                    to_avg = 1-to_avg;
+                    avg = (value+to_avg)/2;
+                }else if (answer <= 0.5 && value <= 0.5){
+                    value = 1-value;
+                    to_avg = 1-to_avg;
+                    avg = (value+to_avg)/2;
+                }
+                avg = round(avg, 2);
+                if (entry.getValue() > avg){
+                    conlusion_and_meter_of_is.put(entry.getKey(),avg); 
+                }
             }
         }
+        
         new_con = new HashMap<>(conlusion_and_meter_of_is);
         for (Map.Entry<String, Double> entry : new_con.entrySet()) {
             if (entry.getValue() < 0.1){

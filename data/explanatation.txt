@@ -1,0 +1,131 @@
+1. 1. Určitě vám jde auto nastartovat. 
+1. 5. Nejde vám auto nastartovat.
+2. 1. Určitě máte v autě pohoné hmoty.
+2. 5. Nemáte v autě pohonné hmoty.
+2. 3. Nevíte jestli máte natankováno to není dobrý. 
+3. 1. Určitě se vám točí startér.
+3. 2. Asi se vám točí startér.
+3. 3. Nevíte jestli se po otočením klíčkem točí startér.
+3. 4. Startér se asi netočí.
+3. 5. Startér se netočí.
+4. 1. Svítí vám světla.
+4. 5. Nesvítí vám světa.
+5. 1. Mrzne.
+5. 2. Je lehce pod nulou.
+5. 4. Je lehce nad nulou.
+5. 5. Nemrzne.
+6. 1. Jde do válce palivo.
+6. 2. Předpokládám že vám do válce asi jde palivo.
+6. 3. Nevím jestli vám do válce jde palivo.
+6. 4. Předpokládám že vám do válce nejde palivo.
+6. 5. Nejde vám do válce palivo.
+7. 1. Auto je na naftu.
+7. 5. Auto není na naftu.
+8. 1. Svíčka vám dělá jiskru.
+8. 3. Nevíte jestli svíčka dělá jiskru.
+8. 5. Svíčka nedělá jiskru.
+9. 1. Svítí některé kontrolky.
+9. 3. Nevím jestli svítí kontorlky. Ještě jste asi nestartoval.
+9. 5. Nesvítí žádné kontrolky.
+10. 1. Svítí kontrolka brzd.
+10. 5. Nesvítí kontrolka brzd.
+11. 1. Svítí kontrolka Chladící kapaliny.
+11. 5. Nesvítí kontrolka chladící kapaliny.
+12. 1. Svítí kontrolka oleje.
+12. 5. Nesvítí kontrolka oleje.
+13. 1. Auto vám jede.
+13. 5. Auto vám nejede.
+14. 1. V autě máte správno hladinu oleje.
+14. 2. Asi máte správnou hladinu oleje nešlo pořáně odečíst z rysky.
+14. 3. Nevíte kde zjistit jestli máte správnou hladinu oleje.
+14. 4. Asi nemáte správnou hladinu oleje, ale blbě se to měří.
+14. 5. Nemáte v autě vůbec olej :D 
+15. 1. Máte natankovanou arktickou naftu.
+15. 2. V nádrži máte převahu arktické nafty.
+15. 3. Nevíte jestli máte arktickou naftu v nádrži se to míchá.
+15. 4. V nádrži mám převahu normální nafty.
+15. 5. Ještě jste vůbec netankoval arktickou naftu.
+16. 1. Jde do svíčky elektrický proud.
+16. 3. Nevíte jestli vám jde do svíčky elektrický proud.
+16. 5. Nejde vám do svíčky elektrický proud.
+17. 1. Zvedají se vám otáčky při šlapání na plynový pedál.
+17. 5. Nezvedají se otáčky při šlapaní na plynový pedál.
+18. 1. Auto vám nebrzdí.
+18. 2. Asi s autem zabrzdíte.
+18. 3. Nevíte jestli s autem zabrzdíte.
+18. 4. S autem máte problém zabrzdit.
+18. 5. Auto vůbec nebrzdí.
+19. 1. Máte dostatek brzdové kapaliny.
+19. 3. Vůbec netušíte jesli tam je nějaká brzdová kapalina nebo kde jí hledat.
+19. 5. Máte nedostatek brzdové kapaliny.
+20. 1. Auto výdává zvuky.
+20. 2. Auto vám asi vydává nějaké zvuky.
+20. 3. Nevíte jestli náhodou nemáte slyšiny.
+20. 4. Auto asi zvuky nevydává venku je asi hodně hlučno.
+20. 5. Auto žádné zvuky nevydává.
+21. 1. Slyšíte svuky při přejezdu nerovností.
+21. 2. Vetšinou slyšíte zvuky při přejezdu nerovností.
+21. 3. Nevíte jestli výdává zvuky při přejezdu nerovností.
+21. 4. Pravděpodobně zvuky nevydává ale občas se něco ozve.
+21. 5. Auto žádné zvuky při přejezdu nerovností nevydává.
+22. 1. Slyšíte zvuky při zatáčení.
+22. 2. Často slyšíte zvuky při zatáčení.
+22. 3. Nevíte jestli vydává zvuky při zatáčení jezdíte jen rovně.
+22. 4. Občas v zatáčce výdá auto nějaký ten zvuk.
+22. 5. Auto žádné zvuky v zatáčkách nevydává.
+23. 1. Auto hučí.
+23. 5. Auto nehučí.
+24. 1. Auto klepe při zatáčení.
+24. 2. Asi vydává klepání při zatáčení.
+24. 4. Asi žádné klepání při zatáčení nevydává.
+24. 5. Auto neklepe při zatáčení.
+25. 1. Auto klepe při vyššých rychlostech.
+25. 2. 
+25. 3. 
+25. 4. 
+25. 5. Auto neklepe při výššých rychlostech.
+26. 1. Máte správný tlak v pneumatikách.
+26. 2. Asi máte správný tlak ale nejde to kontorlovat pořád.
+26. 3. Nevíte jestli máte správný tlak v pneumatikách.
+26. 4. Asi nemáte správný tlak v pneumatikách občas slyšíte pískání.
+26. 5. Nemáte správný tlak v pneumatikách. Auto plave pokud s ním vůbec jde jet.
+27. 1. Auto se klepe při stání.
+27. 2. 
+27. 3. Nevíte jestli se suto klepe při stání.
+27. 4. 
+27. 5. Auto se neklepe při stání.
+28. 1. Citíte vibrace volantu.
+28. 2. Volant slabě vibruje.
+28. 3. Nevíte jestli vibruje volant vůbec to nepoznáte.
+28. 4. Volant slabě vibruje.
+28. 5. Volant nevibruje.
+29. 1. Vadí vám zvuk.
+29. 2. Asi vám vadí zvuk.
+29. 3. Nevíte jestli vám zvuk vadí asi jste ženská :D 
+29. 4. Zvuk vám pravděpodobně nevadí.
+29. 5. Zvuk vám nevadí.
+30. 1. Máte zataženou ruční brzdu.
+30. 2. 
+30. 3. 
+30. 4. 
+30. 5. Nemáte zataženou ruční brzdu.
+31. 1. Máte správnou hladinu chladící kapaliny.
+31. 2. 
+31. 3. Nevíte kde změřit hladinu chladící kapaliny.
+31. 4. 
+31. 5. Nemáte správnou hladinu chladicí kapaliny.
+32. 1. Motor je zahřátý.
+32. 2. Moto máte skoro zahřátý.
+32. 3. 
+32. 4. Motor není skor vůbec zahřátý.
+32. 5. Motor nemáte zahřátý.
+33. 1. Svítí vám kontrolka baterie.
+33. 2. 
+33. 3. 
+33. 4. 
+33. 5. Nesvítí vám kontrolka baterie.
+34. 1. Máte doplněny všechny provozní kapaliny.
+34. 2. Asi máte doplněný všechny provozní kapaliny, ale nikdo neví kolik jich ani je :D  
+34. 3. Nevíte takových nádob a víček kdo se v tom má vyznat. 
+34. 4. Asi nemáte doplněný všechny provozní kapaliny pravidelně doléváte jen vodu do odstřikovačů.
+34. 5. Nemáte doplněny provozní kapaliny o to se vůbec nestaráte.
