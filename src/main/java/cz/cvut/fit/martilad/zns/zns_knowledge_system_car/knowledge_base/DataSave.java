@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.knowledge_base;
 
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorException;
@@ -17,8 +12,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- *
- * @author lamxi
+ * Class for load a keep data from data file. Questions, Conclusions, Fuzzy sets.
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class DataSave {
     Map<String, Map<String, Double>> data = null;

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice;
 
 import java.io.BufferedReader;
@@ -14,8 +9,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- *
- * @author lamxi
+ * Explain module fro explain and get how get the reason.
+ * @author Ladislav Martínek
+ * @since 29. 12. 2017
  */
 public class ExplainModule {
     private Map<String, Double> ansvered_questions;

@@ -2,7 +2,6 @@ package cz.cvut.fit.martilad.zns.zns_knowledge_system_car;
 
 import at.downdrown.vaadinaddons.highchartsapi.HighChart;
 import javax.servlet.annotation.WebServlet;
-
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -25,7 +24,12 @@ import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorExcepti
  * <p>
  * The UI is initialized using {@link #init(VaadinRequest)}. This method is intended to be 
  * overridden to add component to the user interface and initialize non-component functionality.
+ * 
+ *
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
+ 
 @Theme("mytheme")
 public class MyUI extends UI {
     private HighChart chart = null;
@@ -140,10 +144,8 @@ public class MyUI extends UI {
                 System.out.println(ex.getProblem());
             }
         });
-        
         setContent(layout);
     }
-
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
     @VaadinServletConfiguration(ui = MyUI.class, productionMode = false, widgetset = "cz.cvut.fit.martilad.zns.zns_knowledge_system_car.AppWidgetSet")
     public static class MyUIServlet extends VaadinServlet {

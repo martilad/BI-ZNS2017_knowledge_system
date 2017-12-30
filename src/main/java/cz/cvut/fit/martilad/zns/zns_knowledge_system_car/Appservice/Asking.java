@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice;
 
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorException;
@@ -12,8 +7,9 @@ import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.inference_engine.Infere
 import javafx.util.Pair;
 
 /**
- *
- * @author lamxi
+ * Controler for GUI. Manage asking and give questions. There is end clause.
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class Asking {
     ConclusionFuzzy possibly_con;
@@ -23,7 +19,6 @@ public class Asking {
     
     public Asking() throws ErrorException {
         explain = new ExplainModule();
-        
         DataSave data = new DataSave();
         data.load_data(Constants.data_file);
         explain.load_explaination(Constants.explaine_file, data.getMap_questions());
@@ -68,7 +63,4 @@ public class Asking {
         }
         return new Pair(last, explain.get_eplanation());
     }
-    
-    
-    
 }

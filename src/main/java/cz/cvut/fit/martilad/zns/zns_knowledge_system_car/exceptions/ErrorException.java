@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions;
 
 /**
- *
- * @author lamxi
+ * Exception for runtime logic fail.
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class ErrorException extends Exception {
     String problem;
@@ -23,5 +19,4 @@ public class ErrorException extends Exception {
     public void setProblem(String problem) {
         this.problem = problem;
     }
-    
 }

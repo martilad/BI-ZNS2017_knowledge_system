@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.inference_engine;
 
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice.ConclusionFuzzy;
@@ -10,8 +5,9 @@ import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.knowledge_base.DataSave
 import java.util.List;
 
 /**
- *
- * @author lamxi
+ * Inference engine for finding nex question, keep data and get answers
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class InferenceEngine {
     DataSave data;
@@ -45,5 +41,4 @@ public class InferenceEngine {
         con.answer_new(data.get_conclusion_with_value_on_question(question), value);
         return con;
     }
-    
 }

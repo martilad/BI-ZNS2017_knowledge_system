@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice;
 
 import java.util.HashMap;
@@ -10,8 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
- * @author lamxi
+ * Class for resolvng fuzzy set in answering questions.
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class ConclusionFuzzy {
     Map<String, Double> conlusion_and_meter_of_is;
@@ -98,6 +94,4 @@ public class ConclusionFuzzy {
         }
         return null;
     }
-    
-    
 }

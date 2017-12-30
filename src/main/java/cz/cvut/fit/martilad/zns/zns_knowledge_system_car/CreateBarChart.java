@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car;
 
 import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice.ConclusionFuzzy;
@@ -23,8 +18,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
- * @author lamxi
+ * Cass for create chart as componet for vaadin aplication.
+ * @author Ladislav Martínek
+ * @since 30. 11. 2017
  */
 public class CreateBarChart {
     public static HighChart put_chart_to_layout(VerticalLayout layout, ConclusionFuzzy to_chart){
@@ -37,11 +33,9 @@ public class CreateBarChart {
 
         for (Map.Entry<String, Double> entry : to_chart.getConlusion_and_meter_of_is().entrySet()) {
             List<HighChartsData> bananaColumnValues = new ArrayList<>();
-            
             bananaColumnValues.add(new DoubleData(entry.getValue()));
             ColumnChartSeries bananaColumn = new ColumnChartSeries(entry.getKey(), bananaColumnValues);
             columnConfiguration.getSeriesList().add(bananaColumn);
-           
         }
         
         HighChart columnChart = null;
@@ -56,8 +50,6 @@ public class CreateBarChart {
         } catch (HighChartsException e) {
             e.printStackTrace();
         }
-        
-        
         return columnChart;
     }
 }
