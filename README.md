@@ -1,13 +1,7 @@
-Chtělo by to doplnit no ....
-
-Pro vizualizaci využit framework Vaadin a HighchartAPI pro vykreslení grafu.
-Verze jednotlivých frameworků jsou k dohledání v pom.xml, ze kterého čerpá Maven a aplikace jde pomocí tohot sestavim.
-
-
 ZNS_knowledge_system_car
 ==============
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
+Aplikace postavená jako znalostní systém pro diagnostiku závady na autě. K vyhodnoování jsou využívány Fuzzy množiny. Aplikace je napsaná v Javě EE. Verze a sestavení pomocí Maven. Pro GUI byly využity framework Vaadin a pro grafy plugin pro Vaadin HighchartAPI. Báze znalostní a vysvětlovací modu jsou načítány z textových souborů.
 
 
 Workflow
