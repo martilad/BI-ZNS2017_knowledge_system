@@ -1,131 +1,117 @@
-1. 1. UrÄitÄ› vÃ¡m jde auto nastartovat. 
-1. 5. Nejde vÃ¡m auto nastartovat.
-2. 1. UrÄitÄ› mÃ¡te v autÄ› pohonÃ© hmoty.
-2. 5. NemÃ¡te v autÄ› pohonnÃ© hmoty.
-2. 3. NevÃ­te jestli mÃ¡te natankovÃ¡no to nenÃ­ dobrÃ½. 
-3. 1. UrÄitÄ› se vÃ¡m toÄÃ­ startÃ©r.
-3. 2. Asi se vÃ¡m toÄÃ­ startÃ©r.
-3. 3. NevÃ­te jestli se po otoÄenÃ­m klÃ­Äkem toÄÃ­ startÃ©r.
-3. 4. StartÃ©r se asi netoÄÃ­.
-3. 5. StartÃ©r se netoÄÃ­.
-4. 1. SvÃ­tÃ­ vÃ¡m svÄ›tla.
-4. 5. NesvÃ­tÃ­ vÃ¡m svÄ›ta.
+1. 1. Urèitì vám jde auto nastartovat. 
+1. 5. Nejde vám auto nastartovat.
+2. 1. Urèitì máte v autì pohoné hmoty.
+2. 5. Nemáte v autì pohonné hmoty.
+2. 3. Nevíte jestli máte natankováno to není dobrı. 
+3. 1. Urèitì se vám toèí startér.
+3. 2. Asi se vám toèí startér.
+3. 3. Nevíte jestli se po otoèením klíèkem toèí startér.
+3. 4. Startér se asi netoèí.
+3. 5. Startér se netoèí.
+4. 1. Svítí vám svìtla.
+4. 5. Nesvítí vám svìta.
 5. 1. Mrzne.
 5. 2. Je lehce pod nulou.
 5. 4. Je lehce nad nulou.
 5. 5. Nemrzne.
-6. 1. Jde do vÃ¡lce palivo.
-6. 2. PÅ™edpoklÃ¡dÃ¡m Å¾e vÃ¡m do vÃ¡lce asi jde palivo.
-6. 3. NevÃ­m jestli vÃ¡m do vÃ¡lce jde palivo.
-6. 4. PÅ™edpoklÃ¡dÃ¡m Å¾e vÃ¡m do vÃ¡lce nejde palivo.
-6. 5. Nejde vÃ¡m do vÃ¡lce palivo.
+6. 1. Jde do válce palivo.
+6. 2. Pøedpokládám e vám do válce asi jde palivo.
+6. 3. Nevím jestli vám do válce jde palivo.
+6. 4. Pøedpokládám e vám do válce nejde palivo.
+6. 5. Nejde vám do válce palivo.
 7. 1. Auto je na naftu.
-7. 5. Auto nenÃ­ na naftu.
-8. 1. SvÃ­Äka vÃ¡m dÄ›lÃ¡ jiskru.
-8. 3. NevÃ­te jestli svÃ­Äka dÄ›lÃ¡ jiskru.
-8. 5. SvÃ­Äka nedÄ›lÃ¡ jiskru.
-9. 1. SvÃ­tÃ­ nÄ›kterÃ© kontrolky.
-9. 3. NevÃ­m jestli svÃ­tÃ­ kontorlky. JeÅ¡tÄ› jste asi nestartoval.
-9. 5. NesvÃ­tÃ­ Å¾Ã¡dnÃ© kontrolky.
-10. 1. SvÃ­tÃ­ kontrolka brzd.
-10. 5. NesvÃ­tÃ­ kontrolka brzd.
-11. 1. SvÃ­tÃ­ kontrolka ChladÃ­cÃ­ kapaliny.
-11. 5. NesvÃ­tÃ­ kontrolka chladÃ­cÃ­ kapaliny.
-12. 1. SvÃ­tÃ­ kontrolka oleje.
-12. 5. NesvÃ­tÃ­ kontrolka oleje.
-13. 1. Auto vÃ¡m jede.
-13. 5. Auto vÃ¡m nejede.
-14. 1. V autÄ› mÃ¡te sprÃ¡vno hladinu oleje.
-14. 2. Asi mÃ¡te sprÃ¡vnou hladinu oleje neÅ¡lo poÅ™Ã¡nÄ› odeÄÃ­st z rysky.
-14. 3. NevÃ­te kde zjistit jestli mÃ¡te sprÃ¡vnou hladinu oleje.
-14. 4. Asi nemÃ¡te sprÃ¡vnou hladinu oleje, ale blbÄ› se to mÄ›Å™Ã­.
-14. 5. NemÃ¡te v autÄ› vÅ¯bec olej :D 
-15. 1. MÃ¡te natankovanou arktickou naftu.
-15. 2. V nÃ¡drÅ¾i mÃ¡te pÅ™evahu arktickÃ© nafty.
-15. 3. NevÃ­te jestli mÃ¡te arktickou naftu v nÃ¡drÅ¾i se to mÃ­chÃ¡.
-15. 4. V nÃ¡drÅ¾i mÃ¡m pÅ™evahu normÃ¡lnÃ­ nafty.
-15. 5. JeÅ¡tÄ› jste vÅ¯bec netankoval arktickou naftu.
-16. 1. Jde do svÃ­Äky elektrickÃ½ proud.
-16. 3. NevÃ­te jestli vÃ¡m jde do svÃ­Äky elektrickÃ½ proud.
-16. 5. Nejde vÃ¡m do svÃ­Äky elektrickÃ½ proud.
-17. 1. ZvedajÃ­ se vÃ¡m otÃ¡Äky pÅ™i Å¡lapÃ¡nÃ­ na plynovÃ½ pedÃ¡l.
-17. 5. NezvedajÃ­ se otÃ¡Äky pÅ™i Å¡lapanÃ­ na plynovÃ½ pedÃ¡l.
-18. 1. Auto vÃ¡m nebrzdÃ­.
-18. 2. Asi s autem zabrzdÃ­te.
-18. 3. NevÃ­te jestli s autem zabrzdÃ­te.
-18. 4. S autem mÃ¡te problÃ©m zabrzdit.
-18. 5. Auto vÅ¯bec nebrzdÃ­.
-19. 1. MÃ¡te dostatek brzdovÃ© kapaliny.
-19. 3. VÅ¯bec netuÅ¡Ã­te jesli tam je nÄ›jakÃ¡ brzdovÃ¡ kapalina nebo kde jÃ­ hledat.
-19. 5. MÃ¡te nedostatek brzdovÃ© kapaliny.
-20. 1. Auto vÃ½dÃ¡vÃ¡ zvuky.
-20. 2. Auto vÃ¡m asi vydÃ¡vÃ¡ nÄ›jakÃ© zvuky.
-20. 3. NevÃ­te jestli nÃ¡hodou nemÃ¡te slyÅ¡iny.
-20. 4. Auto asi zvuky nevydÃ¡vÃ¡ venku je asi hodnÄ› hluÄno.
-20. 5. Auto Å¾Ã¡dnÃ© zvuky nevydÃ¡vÃ¡.
-21. 1. SlyÅ¡Ã­te svuky pÅ™i pÅ™ejezdu nerovnostÃ­.
-21. 2. VetÅ¡inou slyÅ¡Ã­te zvuky pÅ™i pÅ™ejezdu nerovnostÃ­.
-21. 3. NevÃ­te jestli vÃ½dÃ¡vÃ¡ zvuky pÅ™i pÅ™ejezdu nerovnostÃ­.
-21. 4. PravdÄ›podobnÄ› zvuky nevydÃ¡vÃ¡ ale obÄas se nÄ›co ozve.
-21. 5. Auto Å¾Ã¡dnÃ© zvuky pÅ™i pÅ™ejezdu nerovnostÃ­ nevydÃ¡vÃ¡.
-22. 1. SlyÅ¡Ã­te zvuky pÅ™i zatÃ¡ÄenÃ­.
-22. 2. ÄŒasto slyÅ¡Ã­te zvuky pÅ™i zatÃ¡ÄenÃ­.
-22. 3. NevÃ­te jestli vydÃ¡vÃ¡ zvuky pÅ™i zatÃ¡ÄenÃ­ jezdÃ­te jen rovnÄ›.
-22. 4. ObÄas v zatÃ¡Äce vÃ½dÃ¡ auto nÄ›jakÃ½ ten zvuk.
-22. 5. Auto Å¾Ã¡dnÃ© zvuky v zatÃ¡ÄkÃ¡ch nevydÃ¡vÃ¡.
-23. 1. Auto huÄÃ­.
-23. 5. Auto nehuÄÃ­.
-24. 1. Auto klepe pÅ™i zatÃ¡ÄenÃ­.
-24. 2. Asi vydÃ¡vÃ¡ klepÃ¡nÃ­ pÅ™i zatÃ¡ÄenÃ­.
-24. 4. Asi Å¾Ã¡dnÃ© klepÃ¡nÃ­ pÅ™i zatÃ¡ÄenÃ­ nevydÃ¡vÃ¡.
-24. 5. Auto neklepe pÅ™i zatÃ¡ÄenÃ­.
-25. 1. Auto klepe pÅ™i vyÅ¡Å¡Ã½ch rychlostech.
-25. 2. 
-25. 3. 
-25. 4. 
-25. 5. Auto neklepe pÅ™i vÃ½Å¡Å¡Ã½ch rychlostech.
-26. 1. MÃ¡te sprÃ¡vnÃ½ tlak v pneumatikÃ¡ch.
-26. 2. Asi mÃ¡te sprÃ¡vnÃ½ tlak ale nejde to kontorlovat poÅ™Ã¡d.
-26. 3. NevÃ­te jestli mÃ¡te sprÃ¡vnÃ½ tlak v pneumatikÃ¡ch.
-26. 4. Asi nemÃ¡te sprÃ¡vnÃ½ tlak v pneumatikÃ¡ch obÄas slyÅ¡Ã­te pÃ­skÃ¡nÃ­.
-26. 5. NemÃ¡te sprÃ¡vnÃ½ tlak v pneumatikÃ¡ch. Auto plave pokud s nÃ­m vÅ¯bec jde jet.
-27. 1. Auto se klepe pÅ™i stÃ¡nÃ­.
-27. 2. 
-27. 3. NevÃ­te jestli se suto klepe pÅ™i stÃ¡nÃ­.
-27. 4. 
-27. 5. Auto se neklepe pÅ™i stÃ¡nÃ­.
-28. 1. CitÃ­te vibrace volantu.
-28. 2. Volant slabÄ› vibruje.
-28. 3. NevÃ­te jestli vibruje volant vÅ¯bec to nepoznÃ¡te.
-28. 4. Volant slabÄ› vibruje.
+7. 5. Auto není na naftu.
+8. 1. Svíèka vám dìlá jiskru.
+8. 3. Nevíte jestli svíèka dìlá jiskru.
+8. 5. Svíèka nedìlá jiskru.
+9. 1. Svítí nìkteré kontrolky.
+9. 3. Nevím jestli svítí kontorlky. Ještì jste asi nestartoval.
+9. 5. Nesvítí ádné kontrolky.
+10. 1. Svítí kontrolka brzd.
+10. 5. Nesvítí kontrolka brzd.
+11. 1. Svítí kontrolka Chladící kapaliny.
+11. 5. Nesvítí kontrolka chladící kapaliny.
+12. 1. Svítí kontrolka oleje.
+12. 5. Nesvítí kontrolka oleje.
+13. 1. Auto vám jede.
+13. 5. Auto vám nejede.
+14. 1. V autì máte správno hladinu oleje.
+14. 2. Asi máte správnou hladinu oleje nešlo poøánì odeèíst z rysky.
+14. 3. Nevíte kde zjistit jestli máte správnou hladinu oleje.
+14. 4. Asi nemáte správnou hladinu oleje, ale blbì se to mìøí.
+14. 5. Nemáte v autì vùbec olej :D 
+15. 1. Máte natankovanou arktickou naftu.
+15. 2. V nádri máte pøevahu arktické nafty.
+15. 3. Nevíte jestli máte arktickou naftu v nádri se to míchá.
+15. 4. V nádri mám pøevahu normální nafty.
+15. 5. Ještì jste vùbec netankoval arktickou naftu.
+16. 1. Jde do svíèky elektrickı proud.
+16. 3. Nevíte jestli vám jde do svíèky elektrickı proud.
+16. 5. Nejde vám do svíèky elektrickı proud.
+17. 1. Zvedají se vám otáèky pøi šlapání na plynovı pedál.
+17. 5. Nezvedají se otáèky pøi šlapaní na plynovı pedál.
+18. 1. Auto vám nebrzdí.
+18. 2. Asi s autem zabrzdíte.
+18. 3. Nevíte jestli s autem zabrzdíte.
+18. 4. S autem máte problém zabrzdit.
+18. 5. Auto vùbec nebrzdí.
+19. 1. Máte dostatek brzdové kapaliny.
+19. 3. Vùbec netušíte jesli tam je nìjaká brzdová kapalina nebo kde jí hledat.
+19. 5. Máte nedostatek brzdové kapaliny.
+20. 1. Auto vıdává zvuky.
+20. 2. Auto vám asi vydává nìjaké zvuky.
+20. 3. Nevíte jestli náhodou nemáte slyšiny.
+20. 4. Auto asi zvuky nevydává venku je asi hodnì hluèno.
+20. 5. Auto ádné zvuky nevydává.
+21. 1. Slyšíte svuky pøi pøejezdu nerovností.
+21. 2. Vetšinou slyšíte zvuky pøi pøejezdu nerovností.
+21. 3. Nevíte jestli vıdává zvuky pøi pøejezdu nerovností.
+21. 4. Pravdìpodobnì zvuky nevydává ale obèas se nìco ozve.
+21. 5. Auto ádné zvuky pøi pøejezdu nerovností nevydává.
+22. 1. Slyšíte zvuky pøi zatáèení.
+22. 2. Èasto slyšíte zvuky pøi zatáèení.
+22. 3. Nevíte jestli vydává zvuky pøi zatáèení jezdíte jen rovnì.
+22. 4. Obèas v zatáèce vıdá auto nìjakı ten zvuk.
+22. 5. Auto ádné zvuky v zatáèkách nevydává.
+23. 1. Auto huèí.
+23. 5. Auto nehuèí.
+24. 1. Auto klepe pøi zatáèení.
+24. 2. Asi vydává klepání pøi zatáèení.
+24. 4. Asi ádné klepání pøi zatáèení nevydává.
+24. 5. Auto neklepe pøi zatáèení.
+25. 1. Auto klepe pøi vyššıch rychlostech.
+25. 5. Auto neklepe pøi vıššıch rychlostech.
+26. 1. Máte správnı tlak v pneumatikách.
+26. 2. Asi máte správnı tlak ale nejde to kontorlovat poøád.
+26. 3. Nevíte jestli máte správnı tlak v pneumatikách.
+26. 4. Asi nemáte správnı tlak v pneumatikách obèas slyšíte pískání.
+26. 5. Nemáte správnı tlak v pneumatikách. Auto plave pokud s ním vùbec jde jet.
+27. 1. Auto se klepe pøi stání.
+27. 3. Nevíte jestli se suto klepe pøi stání.
+27. 5. Auto se neklepe pøi stání.
+28. 1. Citíte vibrace volantu.
+28. 2. Volant slabì vibruje.
+28. 3. Nevíte jestli vibruje volant vùbec to nepoznáte.
+28. 4. Volant slabì vibruje.
 28. 5. Volant nevibruje.
-29. 1. VadÃ­ vÃ¡m zvuk.
-29. 2. Asi vÃ¡m vadÃ­ zvuk.
-29. 3. NevÃ­te jestli vÃ¡m zvuk vadÃ­ asi jste Å¾enskÃ¡ :D 
-29. 4. Zvuk vÃ¡m pravdÄ›podobnÄ› nevadÃ­.
-29. 5. Zvuk vÃ¡m nevadÃ­.
-30. 1. MÃ¡te zataÅ¾enou ruÄnÃ­ brzdu.
-30. 2. 
-30. 3. 
-30. 4. 
-30. 5. NemÃ¡te zataÅ¾enou ruÄnÃ­ brzdu.
-31. 1. MÃ¡te sprÃ¡vnou hladinu chladÃ­cÃ­ kapaliny.
-31. 2. 
-31. 3. NevÃ­te kde zmÄ›Å™it hladinu chladÃ­cÃ­ kapaliny.
-31. 4. 
-31. 5. NemÃ¡te sprÃ¡vnou hladinu chladicÃ­ kapaliny.
-32. 1. Motor je zahÅ™Ã¡tÃ½.
-32. 2. Moto mÃ¡te skoro zahÅ™Ã¡tÃ½.
-32. 3. 
-32. 4. Motor nenÃ­ skor vÅ¯bec zahÅ™Ã¡tÃ½.
-32. 5. Motor nemÃ¡te zahÅ™Ã¡tÃ½.
-33. 1. SvÃ­tÃ­ vÃ¡m kontrolka baterie.
-33. 2. 
-33. 3. 
-33. 4. 
-33. 5. NesvÃ­tÃ­ vÃ¡m kontrolka baterie.
-34. 1. MÃ¡te doplnÄ›ny vÅ¡echny provoznÃ­ kapaliny.
-34. 2. Asi mÃ¡te doplnÄ›nÃ½ vÅ¡echny provoznÃ­ kapaliny, ale nikdo nevÃ­ kolik jich ani je :D  
-34. 3. NevÃ­te takovÃ½ch nÃ¡dob a vÃ­Äek kdo se v tom mÃ¡ vyznat. 
-34. 4. Asi nemÃ¡te doplnÄ›nÃ½ vÅ¡echny provoznÃ­ kapaliny pravidelnÄ› dolÃ©vÃ¡te jen vodu do odstÅ™ikovaÄÅ¯.
-34. 5. NemÃ¡te doplnÄ›ny provoznÃ­ kapaliny o to se vÅ¯bec nestarÃ¡te.
+29. 1. Vadí vám zvuk.
+29. 2. Asi vám vadí zvuk.
+29. 3. Nevíte jestli vám zvuk vadí asi jste enská :D 
+29. 4. Zvuk vám pravdìpodobnì nevadí.
+29. 5. Zvuk vám nevadí.
+30. 1. Máte zataenou ruèní brzdu.
+30. 5. Nemáte zataenou ruèní brzdu.
+31. 1. Máte správnou hladinu chladící kapaliny.
+31. 3. Nevíte kde zmìøit hladinu chladící kapaliny.
+31. 5. Nemáte správnou hladinu chladicí kapaliny.
+32. 1. Motor je zahøátı.
+32. 2. Motor máte skoro zahøátı.
+32. 4. Motor není skor vùbec zahøátı.
+32. 5. Motor nemáte zahøátı.
+33. 1. Svítí vám kontrolka baterie.
+33. 5. Nesvítí vám kontrolka baterie.
+34. 1. Máte doplnìny všechny provozní kapaliny.
+34. 2. Asi máte doplnìnı všechny provozní kapaliny, ale nikdo neví kolik jich ani je :D  
+34. 3. Nevíte takovıch nádob a víèek kdo se v tom má vyznat. 
+34. 4. Asi nemáte doplnìnı všechny provozní kapaliny pravidelnì doléváte jen vodu do odstøikovaèù.
+34. 5. Nemáte doplnìny provozní kapaliny o to se vùbec nestaráte.

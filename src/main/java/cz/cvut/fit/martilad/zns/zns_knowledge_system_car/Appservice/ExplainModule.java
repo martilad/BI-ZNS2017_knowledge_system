@@ -5,13 +5,13 @@
  */
 package cz.cvut.fit.martilad.zns.zns_knowledge_system_car.Appservice;
 
-import cz.cvut.fit.martilad.zns.zns_knowledge_system_car.exceptions.ErrorException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  *
@@ -19,8 +19,7 @@ import java.util.Map;
  */
 public class ExplainModule {
     private Map<String, Double> ansvered_questions;
-    private Map<String, Map<String, String>> explanation = null;
-    private boolean explanation_ex = false;
+    private Map<String, Map<Integer, String>> explanation = null;
     
 
     public ExplainModule() {
@@ -32,19 +31,31 @@ public class ExplainModule {
     }
     
     public String get_eplanation(){
-        String return_ex = "";
-        if (!explanation_ex) {
+        String return_ex = "Vaše odpovědi nebo věty vyvozené systémem.\n";
+        if (explanation == null) {
+            System.out.println("prdelka");
             return list_of_questions();
         }else{
-            return "fake";
+            for (Map.Entry<String, Double> entry : ansvered_questions.entrySet()) {
+                System.out.println(entry.getKey());
+                if (explanation.containsKey(entry.getKey()) && explanation.get(entry.getKey()).containsKey(get_number_of_answer(entry.getValue()))){
+                    return_ex = return_ex + explanation.get(entry.getKey()).get(get_number_of_answer(entry.getValue())) + "\n";
+                }else{
+                    return_ex = return_ex + answert_to_line_explain(entry);
+                }
         }
+        }
+        return return_ex;
     }
     public String list_of_questions(){
         String return_ex = "Vaše odpovědi na otázky položené systémem: \n";
         for (Map.Entry<String, Double> entry : ansvered_questions.entrySet()) {
-             return_ex = return_ex + entry.getKey() + "  -> " + get_type_of_answer(entry.getValue()) + "\n";
+             return_ex = return_ex + answert_to_line_explain(entry);
         }
         return return_ex;
+    }
+    public String answert_to_line_explain(Map.Entry<String,Double> entry){
+        return entry.getKey() + "  -> " + get_type_of_answer(entry.getValue()) + "\n";
     }
     public String get_type_of_answer(Double answer){
         if (answer >= 0 && answer <= 0.2 )
@@ -59,9 +70,25 @@ public class ExplainModule {
             return "Ano";
         return "ANO";
     }
+    public Integer get_number_of_answer(Double answer){
+        if (answer >= 0 && answer <= 0.2 )
+            return 5;
+        if (answer > 0.2 && answer <= 0.4 )
+            return 4;
+        if (answer > 0.4 && answer < 0.6 )
+            return 3;
+        if (answer >= 0.6 && answer < 0.8 )
+            return 2;
+        if (answer >= 0.8 && answer <= 1 )
+            return 1;
+        return 0;
+    }
     
-    public void load_explaination(String file_name){
+    public void load_explaination(String file_name, Map<Integer, String> map_of_question){
+        
         try{
+            System.out.println("prdel");
+            explanation = new HashMap<>();
             BufferedReader br = null;
             br = new BufferedReader(new FileReader(file_name));
             String read = "";
@@ -71,34 +98,36 @@ public class ExplainModule {
                     break;
                 }
                 read = read.replaceAll("^\\s+","");
-                if (!read.isEmpty() && read.charAt(0)=='Q'){
+                if (!read.isEmpty()){
+                    int question_number = new Scanner(read).useDelimiter("\\D+").nextInt();
+                    String tmp = read.substring(read.indexOf(" ") + 1);
+                    int answer_number = new Scanner(tmp).useDelimiter("\\D+").nextInt();
+                    String explain_text = tmp.substring(tmp.indexOf(" ") + 1);
                     
-                    break;
-                }else if(!read.isEmpty() && read.charAt(0)=='C'){
-                   
-                    break;
+                    if (explanation.containsKey(map_of_question.get(question_number))){
+                        explanation.get(map_of_question.get(question_number)).put(answer_number, explain_text);
+                        continue;
+                    }else{
+                        Map<Integer, String> map = new HashMap<Integer, String>();
+                        map.put(answer_number, explain_text);
+                        explanation.put(map_of_question.get(question_number), map);
+                        continue;
+                    }
                 }else if(read.isEmpty() ) {
                     continue;
                 }
                 else{
-                    explanation_ex = false;
                     System.out.println("Špatný formát souboru vysvětlování.");
                     return;
                 }
             }
          
         } catch (FileNotFoundException ex) {
-            explanation_ex = false;
             System.out.println("Neexistující soubor vysvětlování.");
             return;
         }catch (IOException ex){
-            explanation_ex = false;
             System.out.println("IO except");
             return;
         }
-        explanation_ex = true;
     }
-    
-    
-    
 }

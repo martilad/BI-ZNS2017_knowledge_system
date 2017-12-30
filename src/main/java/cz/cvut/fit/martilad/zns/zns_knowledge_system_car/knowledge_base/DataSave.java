@@ -21,7 +21,6 @@ import java.util.Scanner;
  * @author lamxi
  */
 public class DataSave {
-    ///Map<Question, Map<Conclusion,Value>>
     Map<String, Map<String, Double>> data = null;
     Map<String, Map<String, Double>> data_reve = null;
     List<String> conclusion = null;
@@ -108,6 +107,10 @@ public class DataSave {
                 conclusion.add(text);
                 map_conclusions.put(res, text);
             }
+    }
+
+    public Map<Integer, String> getMap_questions() {
+        return map_questions;
     }
     public void load_fuzzy (BufferedReader br) throws IOException, ErrorException{
         String read;

@@ -23,9 +23,10 @@ public class Asking {
     
     public Asking() throws ErrorException {
         explain = new ExplainModule();
-        explain.load_explaination(Constants.explaine_file);
+        
         DataSave data = new DataSave();
         data.load_data(Constants.data_file);
+        explain.load_explaination(Constants.explaine_file, data.getMap_questions());
         possibly_con = new ConclusionFuzzy(data.getConclusion());
         if (!data.is_read_succes()){
             throw new ErrorException("Chyba při čtení datového souboru.");
