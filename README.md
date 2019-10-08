@@ -1,7 +1,8 @@
 ZNS_knowledge_system_car
-==============
+==========================
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Aplikace postavená jako znalostní systém pro diagnostiku závady na autě. K vyhodnoování jsou využívány Fuzzy množiny. Aplikace je napsaná v Javě EE. Verze a sestavení pomocí Maven. Pro GUI byly využity framework Vaadin a pro grafy plugin pro Vaadin HighchartAPI. Báze znalostní a vysvětlovací modu jsou načítány z textových souborů.
+Aplikace postavená jako znalostní systém pro diagnostiku závady na autě. K vyhodnocování jsou využívány Fuzzy množiny. Aplikace je napsaná v Javě EE. Verze a sestavení pomocí Maven. Pro GUI byly využity framework Vaadin a pro grafy plugin pro Vaadin HighchartAPI. Báze znalostní a vysvětlovací modu jsou načítány z textových souborů.
 
 
 Workflow
@@ -49,4 +50,7 @@ Using Vaadin pre-releases
 -------------------------
 
 If Vaadin pre-releases are not enabled by default, use the Maven parameter
-"-P vaadin-prerelease" or change the activation default value of the profile in pom.xml .
+"-P vaadin-prerelease" or change the activation default value of the profile in pom.xml.
+
+## License
+This project is licensed under the **MIT**.
